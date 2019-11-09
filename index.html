@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Codejam-canvas</title>
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="menu">
+        <div class="hamburger">
+          <img src="images/menu.svg" alt="menu" />
+        </div>
+        <h1 class="menu-title">CodeJam - Pallete</h1>
+        <div class="dot-menu">
+          <img src="images/dot-menu icon.svg" alt="dot-menu" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="items-container instruments">
+        <ul class="items-conteiner-list">
+          <li class="list-item">
+            <img src="images/icon-bucket.svg" alt="bucket" class="item-img" />
+            <p class="item-title">Paint bucket</p>
+          </li>
+          <li class="list-item">
+            <img src="images/icon-eyedropper.svg" alt="eyedropper" class="item-img" />
+            <p class="item-title">Choose color</p>
+          </li>
+        </ul>
+        <ul class="items-conteiner-list">
+          <li class="list-item">
+            <img src="images/icon-move.svg" alt="move" class="item-img" />
+            <p class="item-title">Move</p>
+          </li>
+          <li class="list-item">
+            <img src="images/icon-transform.svg" alt="transform" class="item-img" />
+            <p class="item-title">Transform</p>
+          </li>
+        </ul>
+      </div>
+      <div class="items-container colors">
+        <ul class="items-conteiner-list">
+          <li class="list-item">
+            <div class="color-sample current-color"></div>
+            <p class="item-title">Current color</p>
+          </li>
+          <li class="list-item">
+            <div class="color-sample prev-color"></div>
+            <p class="item-title">Prev color</p>
+          </li>
+        </ul>
+        <ul class="items-conteiner-list">
+          <li class="list-item">
+            <div class="color-sample red"></div>
+            <p class="item-title">red</p>
+          </li>
+          <li class="list-item">
+            <div class="color-sample blue"></div>
+            <p class="item-title">blue</p>
+          </li>
+        </ul>
+      </div>
+      <div class="items-container sizes">
+        <ul class="items-conteiner-list">
+          <li class="list-item size-item small" data-size="4" id="4">
+            <div class="item-check"></div>
+            <p class="item-title">4x4</p>
+          </li>
+          <li class="list-item size-item medium" data-size="32" id="32">
+            <div class="item-check"></div>
+            <p class="item-title">32x32</p>
+          </li>
+          <li class="list-item size-item big active" data-size="512" id="512">
+            <div class="item-check"></div>
+            <p class="item-title">Image</p>
+          </li>
+        </ul>
+      </div>
+      <div class="canvas-wrapper">
+        <canvas id="canvas"></canvas>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
